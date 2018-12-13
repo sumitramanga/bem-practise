@@ -8,6 +8,20 @@
 </head>
 <body>
 
+	<!--
+		- "Block" is the parent element which is the block itself.
+			e.g "block"
+		- "Element" is the contents inside of the block which are also children.
+			e.g "block__element"
+		- "Modifier" is what is used to add extra styling to the specific element or block
+			e.g "btn--primary"
+
+		NESTING/BLOCKS INSIDE BLOCKS?
+		- block names become irrelvant when they are no longer required. For
+		example, nav__menu__item
+ 	-->
+
+
 	<div class="block">
 		<div class="block__element1 block__element--mod">
 
@@ -18,14 +32,12 @@
 	</div>
 
 	<div class="nav">
-		<div class="nav__logo">
-
-		</div>
+		<div class="nav__logo"></div>
 
 		<ul class="nav__menu">
-			<li class="nav__menu__item"></li>
-			<li class="nav__menu__item"></li>
-			<li class="nav__menu__item"></li>
+			<li class="menu__item"></li>
+			<li class="menu__item"></li>
+			<li class="menu__item"></li>
 		</ul>
 	</div>
 
